@@ -34,10 +34,10 @@ or... use your money :sweat_smile:
 ```bash
 # run on proxmox server shell
 pveum role add provisioner -privs "Datastore.AllocateSpace Datastore.Audit Pool.Allocate Pool.Audit SDN.Use Sys.Audit Sys.Console Sys.Modify VM.Allocate VM.Audit VM.Clone VM.Config.CDROM VM.Config.Cloudinit VM.Config.CPU VM.Config.Disk VM.Config.HWType VM.Config.Memory VM.Config.Network VM.Console VM.Config.Options VM.Migrate VM.Monitor VM.PowerMgmt"
-pveum user add userprovisioner@pve
-pveum aclmod / -user userprovisioner@pve -role provisioner
-pveum user token add userprovisioner@pve provisioner-token --privsep=0
-pveum aclmod /storage/local --user userprovisioner@pve --role PVEDatastoreAdmin --token userprovisioner@pve\!provisioner-token
+pveum user add userprovisioner@pve03
+pveum aclmod / -user userprovisioner@pve03 -role provisioner
+pveum user token add userprovisioner@pve03 provisioner-token --privsep=0
+pveum aclmod /storage/local --user userprovisioner@pve03 --role PVEDatastoreAdmin --token userprovisioner@pve03\!provisioner-token
 ```
 **you have to save the output somewhere, you need this!**
 
