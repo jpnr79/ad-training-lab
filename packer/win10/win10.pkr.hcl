@@ -35,7 +35,7 @@ source "proxmox-iso" "traininglab-ws" {
   cpu_type                 = "host"
   memory                   = 8192
   vm_name                  = "traininglab-ws"
-  tags                     = "traininglab-ws"
+  tags                     = "traininglab_ws"
   template_description     = "TrainingLab Workstation Template"
   insecure_skip_tls_verify = true
   task_timeout             = "30m"
