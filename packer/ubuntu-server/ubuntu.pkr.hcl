@@ -85,5 +85,5 @@ source "proxmox-iso" "traininglab_server" {
 }
 
 build {
-  sources = ["sources.proxmox-iso.traininglab-server"]
+  sources = ["sources.proxmox-iso.traininglab_server"]
 }
