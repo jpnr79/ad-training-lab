@@ -21,7 +21,7 @@ source "proxmox-iso" "traininglab-server" {
   cpu_type                = "host"
   memory                  = 8192
   vm_name                 = "traininglab-server"
-  tags                    = "traininglab-server"
+  tags                    = "traininglab_server"
   template_description    = "TrainingLab Ubuntu Server Template"
   insecure_skip_tls_verify = true
   task_timeout            = "30m"
@@ -31,9 +31,9 @@ source "proxmox-iso" "traininglab-server" {
 
   boot_iso {
     type             = "scsi"
-    iso_url          = "https://releases.ubuntu.com/22.04.4/ubuntu-22.04.4-live-server-amd64.iso"
+    iso_url          = "https://releases.ubuntu.com/22.04.5/ubuntu-22.04.5-live-server-amd64.iso"
     unmount          = true
-    iso_checksum     = "sha256:45f873de9f8cb637345d6e66a583762730bbea30277ef7b32c9c3bd6700a32b2"
+    iso_checksum     = "sha256:9bc6028870aef3f74f4e16b900008179e78b130e6b0b9a140635434a46aa98b0"
     iso_download_pve = true
     iso_storage_pool = "local"
   }
