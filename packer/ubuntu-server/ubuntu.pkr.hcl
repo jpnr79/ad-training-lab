@@ -7,7 +7,7 @@ packer {
   }
 }
 
-source "proxmox-iso" "traininglab-server" {
+source "proxmox-iso" "traininglab_server" {
   proxmox_url             = "https://${var.proxmox_node}:8006/api2/json"
   node                    = var.proxmox_hostname
   username                = var.proxmox_api_id
@@ -20,7 +20,7 @@ source "proxmox-iso" "traininglab-server" {
   cores                   = 2
   cpu_type                = "host"
   memory                  = 2048
-  vm_name                 = "traininglab-server"
+  vm_name                 = "traininglab_server"
   tags                    = "traininglab_server"
   template_description    = "TrainingLab Ubuntu Server Template"
   insecure_skip_tls_verify = true
