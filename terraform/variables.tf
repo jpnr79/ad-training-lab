@@ -35,6 +35,6 @@ variable "storage_name" {
 }
 
 variable "netbridge" {
-  default = "vmbr0"
+  default = "vmbr1"
   description = "network card used to deploy the lab - can be different from packer template!"
 }
