@@ -36,5 +36,5 @@ variable "storage_name" {
 
 variable "netbridge" {
   type = string
-  default = "vmbr1"
+  default = "vmbr0"
 }
