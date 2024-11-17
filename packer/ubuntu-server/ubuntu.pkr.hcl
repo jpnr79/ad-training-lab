@@ -17,9 +17,9 @@ source "proxmox-iso" "traininglab-server" {
   ssh_password            = var.lab_password
   ssh_timeout             = "30m"
   qemu_agent              = true
-  cores                   = 6
+  cores                   = 2
   cpu_type                = "host"
-  memory                  = 8192
+  memory                  = 2048
   vm_name                 = "traininglab-server"
   tags                    = "traininglab_server"
   template_description    = "TrainingLab Ubuntu Server Template"
