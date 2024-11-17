@@ -5,7 +5,7 @@ variable "pve_node" {
 }
 
 variable "pve_node_ip" {
-    default = "192.168.1.X"
+    default = "10.0.253"
     description = "proxmox-pve ip"
 }
 
@@ -30,11 +30,11 @@ variable "tokenkey" {
 }
 
 variable "storage_name" {
-    default = "local-lvm"
+    default = "local"
     description = "proxmox storage name"
 }
 
 variable "netbridge" {
-  default = "vmbr1"
+  default = "vmbr0"
   description = "network card used to deploy the lab - can be different from packer template!"
 }
