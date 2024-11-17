@@ -11,7 +11,7 @@ packer {
   }
 }
 
-source "proxmox-iso" "traininglab_ws" {
+source "proxmox-iso" "traininglab-ws" {
   proxmox_url  = "https://${var.proxmox_node}:8006/api2/json"
   node         = var.proxmox_hostname
   username     = var.proxmox_api_id
@@ -34,7 +34,7 @@ source "proxmox-iso" "traininglab_ws" {
   cores                    = 2
   cpu_type                 = "host"
   memory                   = 4096
-  vm_name                  = "traininglab_ws"
+  vm_name                  = "traininglab-ws"
   tags                     = "traininglab_ws"
   template_description     = "TrainingLab Workstation Template"
   insecure_skip_tls_verify = true
@@ -72,7 +72,7 @@ source "proxmox-iso" "traininglab_ws" {
 }
 
 build {
-  sources = ["sources.proxmox-iso.traininglab_ws"]
+  sources = ["sources.proxmox-iso.traininglab-ws"]
 
   provisioner "windows-update" {
     search_criteria = "AutoSelectOnWebSites=1 and IsInstalled=0"
