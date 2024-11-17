@@ -16,7 +16,7 @@ source "proxmox-iso" "traininglab-server" {
   ssh_username            = var.lab_username
   ssh_password            = var.lab_password
   ssh_timeout             = "30m"
-  qemu_agent              = false
+  qemu_agent              = true
   cores                   = 2
   cpu_type                = "host"
   memory                  = 2048
