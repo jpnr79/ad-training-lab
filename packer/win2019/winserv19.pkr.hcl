@@ -35,7 +35,7 @@ source "proxmox-iso" "traininglab-win2019" {
   cpu_type                 = "host"
   memory                   = 8192
   vm_name                  = "traininglab-win2019"
-  tags                     = "traininglab-win2019"
+  tags                     = "traininglab_win2019"
   template_description     = "TrainingLab WindowsServer Template - Sysprep done"
   insecure_skip_tls_verify = true
   task_timeout             = "30m"
