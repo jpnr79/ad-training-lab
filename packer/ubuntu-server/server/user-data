@@ -35,7 +35,7 @@ autoinstall:
   ssh:
     allow-pw: true
     install-server: true
-  locale: en_US
+  locale: pt_PT
   keyboard: 
     layout: it 
 
